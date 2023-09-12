@@ -3,4 +3,4 @@
 package main
 
 // empty method
-func main() {}
+//func main() {}
