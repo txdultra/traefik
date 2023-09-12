@@ -210,6 +210,7 @@ release-packages: generate-webui build-dev-image
 fmt:
 	gofmt -s -l -w $(SRCS)
 
+## debug
 .PHONY: run-dev
 run-dev:
 	go generate
