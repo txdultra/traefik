@@ -2,5 +2,5 @@
 
 package main
 
-// test
+// empty method
 func main() {}
