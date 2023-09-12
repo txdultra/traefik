@@ -1,8 +1,8 @@
 package v1alpha1
 
 import (
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 )

@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/go-check/check"
-	"github.com/traefik/traefik/v2/integration/try"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/integration/try"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
 	checker "github.com/vdemeester/shakers"
 )
 

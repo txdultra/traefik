@@ -11,11 +11,11 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/healthcheck"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/middlewares/accesslog"
-	"github.com/traefik/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/healthcheck"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/accesslog"
+	"github.com/txdultra/traefik/v2/pkg/safe"
 )
 
 // Mirroring is an http.Handler that can mirror requests.

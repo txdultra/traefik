@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/traefik/traefik/v2/pkg/config/runtime"
-	inflightconn "github.com/traefik/traefik/v2/pkg/middlewares/tcp/inflightconn"
-	ipwhitelist "github.com/traefik/traefik/v2/pkg/middlewares/tcp/ipwhitelist"
-	"github.com/traefik/traefik/v2/pkg/server/provider"
-	"github.com/traefik/traefik/v2/pkg/tcp"
+	"github.com/txdultra/traefik/v2/pkg/config/runtime"
+	inflightconn "github.com/txdultra/traefik/v2/pkg/middlewares/tcp/inflightconn"
+	ipwhitelist "github.com/txdultra/traefik/v2/pkg/middlewares/tcp/ipwhitelist"
+	"github.com/txdultra/traefik/v2/pkg/server/provider"
+	"github.com/txdultra/traefik/v2/pkg/tcp"
 )
 
 type middlewareStackType int

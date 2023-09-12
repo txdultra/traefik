@@ -2,10 +2,10 @@ package server
 
 import (
 	"github.com/go-acme/lego/v4/challenge/tlsalpn01"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/server/provider"
-	"github.com/traefik/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/server/provider"
+	"github.com/txdultra/traefik/v2/pkg/tls"
 )
 
 func mergeConfiguration(configurations dynamic.Configurations, defaultEntryPoints []string) dynamic.Configuration {

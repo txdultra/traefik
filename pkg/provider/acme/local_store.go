@@ -6,8 +6,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/safe"
 )
 
 var _ Store = (*LocalStore)(nil)

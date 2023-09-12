@@ -10,7 +10,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 var (

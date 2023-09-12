@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v2/pkg/testhelpers"
+	"github.com/txdultra/traefik/v2/pkg/testhelpers"
 	"github.com/vulcand/oxy/v2/roundrobin"
 )
 

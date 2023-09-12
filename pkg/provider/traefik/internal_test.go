@@ -10,10 +10,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v2/pkg/config/static"
-	"github.com/traefik/traefik/v2/pkg/ping"
-	"github.com/traefik/traefik/v2/pkg/provider/rest"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/config/static"
+	"github.com/txdultra/traefik/v2/pkg/ping"
+	"github.com/txdultra/traefik/v2/pkg/provider/rest"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 var updateExpected = flag.Bool("update_expected", false, "Update expected files in fixtures")

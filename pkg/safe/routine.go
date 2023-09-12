@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 type routineCtx func(ctx context.Context)

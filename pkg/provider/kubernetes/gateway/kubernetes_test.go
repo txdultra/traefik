@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/provider"
-	"github.com/traefik/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/provider"
+	"github.com/txdultra/traefik/v2/pkg/tls"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 	gatev1alpha2 "sigs.k8s.io/gateway-api/apis/v1alpha2"

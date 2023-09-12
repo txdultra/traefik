@@ -29,8 +29,8 @@ package externalversions
 import (
 	"fmt"
 
-	v1alpha1 "github.com/traefik/traefik/v2/pkg/provider/kubernetes/crd/traefikcontainous/v1alpha1"
-	traefikiov1alpha1 "github.com/traefik/traefik/v2/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+	v1alpha1 "github.com/txdultra/traefik/v2/pkg/provider/kubernetes/crd/traefikcontainous/v1alpha1"
+	traefikiov1alpha1 "github.com/txdultra/traefik/v2/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

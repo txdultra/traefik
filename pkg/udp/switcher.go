@@ -1,7 +1,7 @@
 package udp
 
 import (
-	"github.com/traefik/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/safe"
 )
 
 // HandlerSwitcher is a switcher implementation of the Handler interface.

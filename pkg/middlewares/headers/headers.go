@@ -7,11 +7,11 @@ import (
 	"net/http"
 
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/middlewares"
-	"github.com/traefik/traefik/v2/pkg/middlewares/connectionheader"
-	"github.com/traefik/traefik/v2/pkg/tracing"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/middlewares"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/connectionheader"
+	"github.com/txdultra/traefik/v2/pkg/tracing"
 )
 
 const (

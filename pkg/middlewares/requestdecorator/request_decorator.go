@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/containous/alice"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 const (

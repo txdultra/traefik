@@ -15,9 +15,9 @@ import (
 
 	"github.com/go-check/check"
 	"github.com/pmezard/go-difflib/difflib"
-	"github.com/traefik/traefik/v2/integration/try"
-	"github.com/traefik/traefik/v2/pkg/api"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/integration/try"
+	"github.com/txdultra/traefik/v2/pkg/api"
+	"github.com/txdultra/traefik/v2/pkg/log"
 	checker "github.com/vdemeester/shakers"
 )
 

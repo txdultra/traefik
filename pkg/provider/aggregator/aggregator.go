@@ -4,14 +4,14 @@ import (
 	"context"
 	"time"
 
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/config/static"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/provider"
-	"github.com/traefik/traefik/v2/pkg/provider/file"
-	"github.com/traefik/traefik/v2/pkg/provider/traefik"
-	"github.com/traefik/traefik/v2/pkg/redactor"
-	"github.com/traefik/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/config/static"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/provider"
+	"github.com/txdultra/traefik/v2/pkg/provider/file"
+	"github.com/txdultra/traefik/v2/pkg/provider/traefik"
+	"github.com/txdultra/traefik/v2/pkg/redactor"
+	"github.com/txdultra/traefik/v2/pkg/safe"
 )
 
 // throttled defines what kind of config refresh throttling the aggregator should

@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 const localGoPath = "./plugins-local/"

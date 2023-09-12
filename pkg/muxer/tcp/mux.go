@@ -11,11 +11,11 @@ import (
 	"strings"
 
 	"github.com/go-acme/lego/v4/challenge/tlsalpn01"
-	"github.com/traefik/traefik/v2/pkg/ip"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/rules"
-	"github.com/traefik/traefik/v2/pkg/tcp"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/ip"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/rules"
+	"github.com/txdultra/traefik/v2/pkg/tcp"
+	"github.com/txdultra/traefik/v2/pkg/types"
 	"github.com/vulcand/predicate"
 )
 

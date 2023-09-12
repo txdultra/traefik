@@ -3,11 +3,11 @@ package crd
 import (
 	"fmt"
 
-	"github.com/traefik/traefik/v2/pkg/log"
-	traefikscheme "github.com/traefik/traefik/v2/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
-	traefikinformers "github.com/traefik/traefik/v2/pkg/provider/kubernetes/crd/generated/informers/externalversions"
-	traefikv1alpha1 "github.com/traefik/traefik/v2/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
-	"github.com/traefik/traefik/v2/pkg/provider/kubernetes/k8s"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	traefikscheme "github.com/txdultra/traefik/v2/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
+	traefikinformers "github.com/txdultra/traefik/v2/pkg/provider/kubernetes/crd/generated/informers/externalversions"
+	traefikv1alpha1 "github.com/txdultra/traefik/v2/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+	"github.com/txdultra/traefik/v2/pkg/provider/kubernetes/k8s"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 )

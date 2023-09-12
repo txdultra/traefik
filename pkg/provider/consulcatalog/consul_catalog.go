@@ -13,13 +13,13 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/sirupsen/logrus"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/job"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/provider"
-	"github.com/traefik/traefik/v2/pkg/provider/constraints"
-	"github.com/traefik/traefik/v2/pkg/safe"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/job"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/provider"
+	"github.com/txdultra/traefik/v2/pkg/provider/constraints"
+	"github.com/txdultra/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 // defaultTemplateRule is the default template for the default rule.

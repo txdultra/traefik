@@ -7,10 +7,10 @@ import (
 	"unicode/utf8"
 
 	"github.com/gorilla/mux"
-	"github.com/traefik/traefik/v2/pkg/ip"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/middlewares/requestdecorator"
-	"github.com/traefik/traefik/v2/pkg/rules"
+	"github.com/txdultra/traefik/v2/pkg/ip"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/requestdecorator"
+	"github.com/txdultra/traefik/v2/pkg/rules"
 	"github.com/vulcand/predicate"
 )
 

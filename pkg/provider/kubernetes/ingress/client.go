@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-version"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/provider/kubernetes/k8s"
-	traefikversion "github.com/traefik/traefik/v2/pkg/version"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/provider/kubernetes/k8s"
+	traefikversion "github.com/txdultra/traefik/v2/pkg/version"
 	corev1 "k8s.io/api/core/v1"
 	netv1 "k8s.io/api/networking/v1"
 	netv1beta1 "k8s.io/api/networking/v1beta1"

@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/traefik/traefik/v2/pkg/config/static"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/udp"
+	"github.com/txdultra/traefik/v2/pkg/config/static"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/udp"
 )
 
 // UDPEntryPoints maps UDP entry points by their names.

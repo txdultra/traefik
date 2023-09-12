@@ -1,6 +1,6 @@
 package tls
 
-import "github.com/traefik/traefik/v2/pkg/types"
+import "github.com/txdultra/traefik/v2/pkg/types"
 
 const certificateHeader = "-----BEGIN CERTIFICATE-----\n"
 

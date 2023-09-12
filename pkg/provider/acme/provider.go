@@ -20,14 +20,14 @@ import (
 	"github.com/go-acme/lego/v4/providers/dns"
 	"github.com/go-acme/lego/v4/registration"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
-	httpmuxer "github.com/traefik/traefik/v2/pkg/muxer/http"
-	tcpmuxer "github.com/traefik/traefik/v2/pkg/muxer/tcp"
-	"github.com/traefik/traefik/v2/pkg/safe"
-	traefiktls "github.com/traefik/traefik/v2/pkg/tls"
-	"github.com/traefik/traefik/v2/pkg/types"
-	"github.com/traefik/traefik/v2/pkg/version"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	httpmuxer "github.com/txdultra/traefik/v2/pkg/muxer/http"
+	tcpmuxer "github.com/txdultra/traefik/v2/pkg/muxer/tcp"
+	"github.com/txdultra/traefik/v2/pkg/safe"
+	traefiktls "github.com/txdultra/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/version"
 )
 
 // ocspMustStaple enables OCSP stapling as from https://github.com/go-acme/lego/issues/270.

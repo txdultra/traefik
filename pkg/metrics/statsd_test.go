@@ -9,7 +9,7 @@ import (
 
 	"github.com/stvp/go-udp-testing"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 func TestStatsD(t *testing.T) {

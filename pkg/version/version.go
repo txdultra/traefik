@@ -9,7 +9,7 @@ import (
 	"github.com/google/go-github/v28/github"
 	"github.com/gorilla/mux"
 	goversion "github.com/hashicorp/go-version"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 	"github.com/unrolled/render"
 )
 

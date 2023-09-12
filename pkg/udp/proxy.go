@@ -4,7 +4,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // Proxy is a reverse-proxy implementation of the Handler interface.

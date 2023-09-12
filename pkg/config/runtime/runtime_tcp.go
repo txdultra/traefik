@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // GetTCPRoutersByEntryPoints returns all the tcp routers by entry points name and routers name.

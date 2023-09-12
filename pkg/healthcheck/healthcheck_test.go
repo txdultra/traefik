@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v2/pkg/config/runtime"
-	"github.com/traefik/traefik/v2/pkg/testhelpers"
+	"github.com/txdultra/traefik/v2/pkg/config/runtime"
+	"github.com/txdultra/traefik/v2/pkg/testhelpers"
 	"github.com/vulcand/oxy/v2/roundrobin"
 )
 

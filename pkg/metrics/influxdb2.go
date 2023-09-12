@@ -12,9 +12,9 @@ import (
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
 	influxdb2log "github.com/influxdata/influxdb-client-go/v2/log"
 	influxdb "github.com/influxdata/influxdb1-client/v2"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/safe"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 var (

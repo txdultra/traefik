@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/traefik/traefik/v2/pkg/log"
-	tcpmuxer "github.com/traefik/traefik/v2/pkg/muxer/tcp"
-	"github.com/traefik/traefik/v2/pkg/tcp"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	tcpmuxer "github.com/txdultra/traefik/v2/pkg/muxer/tcp"
+	"github.com/txdultra/traefik/v2/pkg/tcp"
 )
 
 const defaultBufSize = 4096

@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 func TestInfluxDB2(t *testing.T) {

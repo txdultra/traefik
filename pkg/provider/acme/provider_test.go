@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-acme/lego/v4/certcrypto"
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v2/pkg/safe"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/safe"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 func TestGetUncheckedCertificates(t *testing.T) {

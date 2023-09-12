@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/go-acme/lego/v4/challenge/tlsalpn01"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/safe"
-	traefiktls "github.com/traefik/traefik/v2/pkg/tls"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/safe"
+	traefiktls "github.com/txdultra/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 const providerNameALPN = "tlsalpn.acme"

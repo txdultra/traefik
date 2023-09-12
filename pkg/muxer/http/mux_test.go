@@ -10,8 +10,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v2/pkg/middlewares/requestdecorator"
-	"github.com/traefik/traefik/v2/pkg/testhelpers"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/requestdecorator"
+	"github.com/txdultra/traefik/v2/pkg/testhelpers"
 )
 
 func Test_addRoute(t *testing.T) {

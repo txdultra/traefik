@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gambol99/go-marathon"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 const (

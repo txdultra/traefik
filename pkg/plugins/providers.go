@@ -9,11 +9,11 @@ import (
 	"strings"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/provider"
-	"github.com/traefik/traefik/v2/pkg/safe"
 	"github.com/traefik/yaegi/interp"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/provider"
+	"github.com/txdultra/traefik/v2/pkg/safe"
 )
 
 // PP the interface of a plugin's provider.
@@ -44,7 +44,7 @@ func (p _PP) Stop() error {
 
 func ppSymbols() map[string]map[string]reflect.Value {
 	return map[string]map[string]reflect.Value{
-		"github.com/traefik/traefik/v2/pkg/plugins/plugins": {
+		"github.com/txdultra/traefik/v2/pkg/plugins/plugins": {
 			"PP":  reflect.ValueOf((*PP)(nil)),
 			"_PP": reflect.ValueOf((*_PP)(nil)),
 		},
@@ -114,7 +114,7 @@ import (
 	"context"
 
 	` + basePkg + ` "` + builder.Import + `"
-	"github.com/traefik/traefik/v2/pkg/plugins"
+	"github.com/txdultra/traefik/v2/pkg/plugins"
 )
 
 func NewWrapper(ctx context.Context, config *` + basePkg + `.Config, name string) (plugins.PP, error) {

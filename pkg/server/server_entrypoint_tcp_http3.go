@@ -10,9 +10,9 @@ import (
 	"sync"
 
 	"github.com/quic-go/quic-go/http3"
-	"github.com/traefik/traefik/v2/pkg/config/static"
-	"github.com/traefik/traefik/v2/pkg/log"
-	tcprouter "github.com/traefik/traefik/v2/pkg/server/router/tcp"
+	"github.com/txdultra/traefik/v2/pkg/config/static"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	tcprouter "github.com/txdultra/traefik/v2/pkg/server/router/tcp"
 )
 
 type http3server struct {

@@ -5,7 +5,7 @@ import (
 
 	instana "github.com/instana/go-sensor"
 	"github.com/opentracing/opentracing-go"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // Name sets the name of this tracer.

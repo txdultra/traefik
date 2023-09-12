@@ -5,8 +5,8 @@ import (
 	"time"
 
 	ptypes "github.com/traefik/paerser/types"
-	traefiktls "github.com/traefik/traefik/v2/pkg/tls"
-	"github.com/traefik/traefik/v2/pkg/types"
+	traefiktls "github.com/txdultra/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 // +k8s:deepcopy-gen=true

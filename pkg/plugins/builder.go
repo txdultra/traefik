@@ -7,9 +7,9 @@ import (
 	"os"
 
 	"github.com/sirupsen/logrus"
-	"github.com/traefik/traefik/v2/pkg/log"
 	"github.com/traefik/yaegi/interp"
 	"github.com/traefik/yaegi/stdlib"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // Constructor creates a plugin handler.

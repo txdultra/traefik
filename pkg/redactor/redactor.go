@@ -7,8 +7,8 @@ import (
 	"regexp"
 
 	"github.com/mitchellh/copystructure"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
-	"github.com/traefik/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/tls"
 	"mvdan.cc/xurls/v2"
 )
 

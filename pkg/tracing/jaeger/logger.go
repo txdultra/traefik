@@ -2,7 +2,7 @@ package jaeger
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // jaegerLogger is an implementation of the Logger interface that delegates to traefik log.

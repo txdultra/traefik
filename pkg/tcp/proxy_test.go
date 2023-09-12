@@ -12,7 +12,7 @@ import (
 	"github.com/pires/go-proxyproto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v2/pkg/config/dynamic"
+	"github.com/txdultra/traefik/v2/pkg/config/dynamic"
 )
 
 func fakeRedis(t *testing.T, listener net.Listener) {

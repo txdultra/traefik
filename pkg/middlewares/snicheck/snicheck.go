@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/middlewares/requestdecorator"
-	traefiktls "github.com/traefik/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/requestdecorator"
+	traefiktls "github.com/txdultra/traefik/v2/pkg/tls"
 )
 
 // SNICheck is an HTTP handler that checks whether the TLS configuration for the server name is the same as for the host header.

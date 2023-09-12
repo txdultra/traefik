@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/traefik/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/log"
 )
 
 // TraceNameHashLength defines the number of characters to use from the head of the generated hash.

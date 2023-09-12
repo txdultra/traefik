@@ -18,10 +18,10 @@ import (
 	"github.com/containous/alice"
 	"github.com/sirupsen/logrus"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/middlewares/capture"
-	traefiktls "github.com/traefik/traefik/v2/pkg/tls"
-	"github.com/traefik/traefik/v2/pkg/types"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/middlewares/capture"
+	traefiktls "github.com/txdultra/traefik/v2/pkg/tls"
+	"github.com/txdultra/traefik/v2/pkg/types"
 )
 
 type key string

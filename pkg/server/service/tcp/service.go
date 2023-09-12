@@ -8,10 +8,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/traefik/traefik/v2/pkg/config/runtime"
-	"github.com/traefik/traefik/v2/pkg/log"
-	"github.com/traefik/traefik/v2/pkg/server/provider"
-	"github.com/traefik/traefik/v2/pkg/tcp"
+	"github.com/txdultra/traefik/v2/pkg/config/runtime"
+	"github.com/txdultra/traefik/v2/pkg/log"
+	"github.com/txdultra/traefik/v2/pkg/server/provider"
+	"github.com/txdultra/traefik/v2/pkg/tcp"
 )
 
 // Manager is the TCPHandlers factory.
