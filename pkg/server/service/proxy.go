@@ -78,7 +78,7 @@ func buildProxy(passHostHeader *bool, responseForwarding *dynamic.ResponseForwar
 				delete(outReq.Header, "Sec-Websocket-Version")
 			}
 		},
-		Transport:     roundTripper,
+		Transport:     http.DefaultTransport, //roundTripper,
 		FlushInterval: time.Duration(flushInterval),
 		BufferPool:    bufferPool,
 		ErrorHandler: func(w http.ResponseWriter, request *http.Request, err error) {
