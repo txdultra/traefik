@@ -35,6 +35,7 @@ type Middleware struct {
 	Retry             *Retry             `json:"retry,omitempty" toml:"retry,omitempty" yaml:"retry,omitempty" export:"true"`
 	ContentType       *ContentType       `json:"contentType,omitempty" toml:"contentType,omitempty" yaml:"contentType,omitempty" export:"true"`
 	Gray              *CdfGrayGateway    `json:"gray,omitempty" toml:"gray,omitempty" yaml:"gray,omitempty" export:"true"`
+	CdfAuth           *CdfAuth           `json:"cdfAuth,omitempty" toml:"cdfAuth,omitempty" yaml:"cdfAuth,omitempty" export:"true"`
 
 	Plugin map[string]PluginConf `json:"plugin,omitempty" toml:"plugin,omitempty" yaml:"plugin,omitempty" export:"true"`
 }
@@ -306,6 +307,13 @@ type Headers struct {
 type CdfGrayGateway struct {
 	Enable bool `json:"enable,omitempty" toml:"enable,omitempty" yaml:"enable,omitempty" export:"true"`
 	//Apollo map[string]string `json:"apollo,omitempty" toml:"apollo,omitempty" yaml:"apollo,omitempty" export:"true"`
+}
+
+// +k8s:deepcopy-gen=true
+
+// cdf authentication
+type CdfAuth struct {
+	Enable bool `json:"enable,omitempty" toml:"enable,omitempty" yaml:"enable,omitempty" export:"true"`
 }
 
 // HasCustomHeadersDefined checks to see if any of the custom header elements have been set.

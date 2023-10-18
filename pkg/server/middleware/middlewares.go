@@ -347,7 +347,15 @@ func (b *Builder) buildConstructor(ctx context.Context, middlewareName string) (
 		}
 		middleware = func(next http.Handler) (http.Handler, error) {
 			return reg.NewMiddlewareFunc("gray")(ctx, next, *config.Gray, middlewareName)
-			//return cdf.New(ctx, next, *config.Gray, middlewareName)
+		}
+	}
+
+	if config.CdfAuth != nil {
+		if middleware != nil {
+			return nil, badConf
+		}
+		middleware = func(next http.Handler) (http.Handler, error) {
+			return reg.NewMiddlewareFunc("cdfAuth")(ctx, next, *config.CdfAuth, middlewareName)
 		}
 	}
 
