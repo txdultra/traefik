@@ -202,7 +202,7 @@ func (m *Manager) buildHTTPHandler(ctx context.Context, router *runtime.RouterIn
 		chain = chain.Append(metricsMiddle.WrapRouterHandler(ctx, m.metricsRegistry, routerName, provider.GetQualifiedName(ctx, router.Service)))
 	}
 
-	return chain.Extend(*mHandler).Append(tHandler).Extend(handlerChain).Then(sHandler)
+	return chain.Extend(*mHandler).Append(tHandler).Append(lastHandlers...).Then(sHandler)
 }
 
 // BuildDefaultHTTPRouter creates a default HTTP router.
@@ -211,9 +211,9 @@ func BuildDefaultHTTPRouter() http.Handler {
 }
 
 var (
-	handlerChain = alice.New()
+	lastHandlers []alice.Constructor
 )
 
-func AppendHandler(next func(http.Handler) (http.Handler, error)) {
-	handlerChain.Append(next)
+func AppendLastHandler(next func(http.Handler) (http.Handler, error)) {
+	lastHandlers = append(lastHandlers, next)
 }
