@@ -202,7 +202,13 @@ func (m *Manager) buildHTTPHandler(ctx context.Context, router *runtime.RouterIn
 		chain = chain.Append(metricsMiddle.WrapRouterHandler(ctx, m.metricsRegistry, routerName, provider.GetQualifiedName(ctx, router.Service)))
 	}
 
-	return chain.Extend(*mHandler).Append(tHandler).Then(sHandler)
+	xxHandler := func(next http.Handler) (http.Handler, error) {
+		return http.HandlerFunc(func(rw http.ResponseWriter, req *http.Request) {
+			next.ServeHTTP(rw, req)
+		}), nil
+	}
+
+	return chain.Extend(*mHandler).Append(tHandler).Append(xxHandler).Then(sHandler)
 }
 
 // BuildDefaultHTTPRouter creates a default HTTP router.
