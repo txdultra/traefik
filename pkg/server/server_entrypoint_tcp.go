@@ -514,25 +514,12 @@ type httpServer struct {
 	Switcher  *middlewares.HTTPHandlerSwitcher
 }
 
-type LastHandler struct {
-	handler http.Handler
-}
-
-func NewLastHandler(h http.Handler) http.Handler {
-	return &LastHandler{h}
-}
-
-func (h *LastHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	h.handler.ServeHTTP(w, r)
-}
-
 func createHTTPServer(ctx context.Context, ln net.Listener, configuration *static.EntryPoint, withH2c bool, reqDecorator *requestdecorator.RequestDecorator) (*httpServer, error) {
 	if configuration.HTTP2.MaxConcurrentStreams < 0 {
 		return nil, errors.New("max concurrent streams value must be greater than or equal to zero")
 	}
 
-	last := NewLastHandler(router.BuildDefaultHTTPRouter())
-	httpSwitcher := middlewares.NewHandlerSwitcher(last)
+	httpSwitcher := middlewares.NewHandlerSwitcher(router.BuildDefaultHTTPRouter())
 
 	next, err := alice.New(requestdecorator.WrapHandler(reqDecorator)).Then(httpSwitcher)
 	if err != nil {
