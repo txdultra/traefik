@@ -514,6 +514,14 @@ type httpServer struct {
 	Switcher  *middlewares.HTTPHandlerSwitcher
 }
 
+type LastHandler struct {
+	handler http.Handler
+}
+
+func (h *LastHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	h.handler.ServeHTTP(w, r)
+}
+
 func createHTTPServer(ctx context.Context, ln net.Listener, configuration *static.EntryPoint, withH2c bool, reqDecorator *requestdecorator.RequestDecorator) (*httpServer, error) {
 	if configuration.HTTP2.MaxConcurrentStreams < 0 {
 		return nil, errors.New("max concurrent streams value must be greater than or equal to zero")
@@ -548,7 +556,7 @@ func createHTTPServer(ctx context.Context, ln net.Listener, configuration *stati
 	}
 
 	serverHTTP := &http.Server{
-		Handler:      handler,
+		Handler:      &LastHandler{handler},
 		ErrorLog:     httpServerLogger,
 		ReadTimeout:  time.Duration(configuration.Transport.RespondingTimeouts.ReadTimeout),
 		WriteTimeout: time.Duration(configuration.Transport.RespondingTimeouts.WriteTimeout),
